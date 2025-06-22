@@ -2,6 +2,8 @@
 
 Este é um teste técnico desenvolvido para a empresa **NG Billing**. O projeto consiste em uma API REST utilizando tecnologias modernas do ecossistema Java.
 
+📄 [Clique aqui para visualizar os requisitos do projeto (PDF)](./Desafio%20Técnico%20-%20Vaga%20Dev%20Java.pdf)
+
 ---
 
 ## 🚀 Tecnologias Utilizadas
