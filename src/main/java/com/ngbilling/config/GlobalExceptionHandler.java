@@ -14,7 +14,6 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.status(ex.getHttpStatus()).body(ex);
     }
 
-    //testar este metodo
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<ServiceException> handleAllExceptions(Exception ex) {
         ServiceException serviceException = new ServiceException(EnumError.ERRO_GENERICO);
