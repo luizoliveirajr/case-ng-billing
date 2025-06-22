@@ -27,6 +27,10 @@ public class ContaService {
             throw new ServiceException(EnumError.FALHA_AO_CADASTRAR_CONTA);
         }
 
+        if(dto.getSaldo().compareTo(BigDecimal.ZERO) < 0){
+            throw new ServiceException(EnumError.SALDO_INSUFICIENTE);
+        }
+
         try {
             Conta novaConta = gerarEntidadeApartirDoDTO(dto);
             contaRepository.save(novaConta);
